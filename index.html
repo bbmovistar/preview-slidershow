@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>preview slideshow</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="slider">
+		<!--0,Template改造，修改view>Template(主要替换关键字，增加Template id)-->
+		<div class="main" id="template_main">
+			<div class="main-i" id="main_{{index}}">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+				<img src="imgs/{{index}}.jpg" alt="1">
+			</div>
+		</div>
+		<div class="ctrl" id="template_ctrl">
+			<a class="ctrl-i" id="ctrl_{{index}}" href="javascript: switchSlider({{index}});"><img src="imgs/{{index}}.jpg" alt="1"></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
